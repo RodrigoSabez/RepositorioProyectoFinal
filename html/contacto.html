@@ -38,64 +38,79 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="largocontacto">
         <h1>CONTACTO</h1>
         <h3>¿DESEA RECIBIR INFORMACION SOBRE INGRESOS Y PROMOCIONES?</h3>
         <fieldset>
         <legend>INGRESE SUS DATOS</legend>
             <form action="">
-                <label for="nombreusuario">Nombre</label>
-                <input type="text"  id="nombreusuario">
-                <label for="apellidousuario">Apellido</label>
-                <input type="text"  id="apellidousuario">
-                <label for="emailusuario">Email</label>
-                <input type="text" id="emailusuario">
-                <label for="pais">Pais de residencia</label>
-                <select name="pais" id="pais">
-                    <option value="">ARGENTINA</option>
-                    <option value="">BRASIL</option>
-                    <option value="">CHILE</option>
-                    <option value="">PERU</option>
-                    <option value="">BOLIVIA</option>
-                    <option value="">URUGUAY</option>
-                    <option value="">COLOMBIA</option>
-                    <option value="">ECUADOR</option>
-                    <option value="">VENEZUELA</option>
-                    <option value="">PARAGUAY</option>
-                    <option value="">EEUU</option>
-                    <option value="">CANADA</option>
-                    <option value="">MEXICO</option>
-                    <option value="">GUATEMALA</option>
-                    <option value="">HONDURAS</option>
-                    <option value="">PUERTO RICO</option>
-                    <option value="">COSTA RICA</option>
-                    <option value="">BELICE</option>
-                    <option value="">PANAMA</option>
-                    <option value="">CUBA</option>
-                </select>
-                <div>
-                <label for="terminos">¿Acepta los terminos y condiciones?</label>
-                <input type="checkbox" name="" id="terminos">
-                </div>
-                <input type="submit">
-                <input type="reset"> 
- 
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nombre</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu Nombre">
+                      <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Apellido</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu Apellido">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                      </div>
+                      <label class="datos" for="pais">Pais de residencia</label>
+                      <select name="pais" id="pais">
+                          <option value="">ARGENTINA</option>
+                          <option value="">BRASIL</option>
+                          <option value="">CHILE</option>
+                          <option value="">PERU</option>
+                          <option value="">BOLIVIA</option>
+                          <option value="">URUGUAY</option>
+                          <option value="">COLOMBIA</option>
+                          <option value="">ECUADOR</option>
+                          <option value="">VENEZUELA</option>
+                          <option value="">PARAGUAY</option>
+                          <option value="">EEUU</option>
+                          <option value="">CANADA</option>
+                          <option value="">MEXICO</option>
+                          <option value="">GUATEMALA</option>
+                          <option value="">HONDURAS</option>
+                          <option value="">PUERTO RICO</option>
+                          <option value="">COSTA RICA</option>
+                          <option value="">BELICE</option>
+                          <option value="">PANAMA</option>
+                          <option value="">CUBA</option>
+                      </select>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">¿Acepta los terminos y condiciones?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <input type="reset"> 
+                </form>
+
+
             </form>
         </fieldset>
         <fieldset>
-            <legend>DEJANOS TUS SUGERENCIAS Y/U OPINIONES</legend>
-            <textarea name="" id="" cols="100" rows="24"></textarea>
+            <legend class="datosugerencia">DEJANOS TUS SUGERENCIAS Y/U OPINIONES</legend>
+            <textarea name="" id="" cols="75" rows="12"></textarea>
             <input type="submit">
         </fieldset>
     </main>
 
     <footer>
+        <p class="titulo">¡Seguinos en nuestras redes!</p>
         <ul>
-            <li class="redes"><img src="../img/logoinst.jpg" alt="Instagram"></li>
-            <li class="redes"><img src="../img/logoface.jpg" alt="Facebook"></li>
-            <li class="redes"><img src="../img/logotw.jpg" alt="Twitter"></li>
-            <li class="redes"><img src="../img/logowpp.jpg" alt="WhatsApp"></li>
+            <li class="redes"><img src="./img/logoinst.jpg" alt="Instagram"></li>
+            <li class="redes"><img src="./img/logoface.jpg" alt="Facebook"></li>
+            <li class="redes"><img src="./img/logotw.jpg" alt="Twitter"></li>
+            <li class="redes"><img src="./img/logowpp.jpg" alt="WhatsApp"></li>
+            
         </ul>
+        <p class="titulo">info@nuestrosfuegos.com</p>
         
     </footer>
 
