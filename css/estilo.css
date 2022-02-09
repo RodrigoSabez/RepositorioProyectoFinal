@@ -61,19 +61,34 @@ main{
     text-align: center;
 
 }
+.largocontacto{
+    height: 800px;
+}
+
+#padre{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+    height: 500px;
+}
 /*main de todas las paginas*/
 /*footer generico*/
 footer{
     top: 20px;
-    height: 100px;
+    height: 140px;
     background-color: black;
     text-align: center;
 }
 .redes{
     display: inline-block;
     width: 220px;
-    justify-content: space-around;
+    justify-content: space-around
 
 
+}
+.titulo{
+    color: white;
+    text-align: center;
+    
 }
 /*footer generico*/
