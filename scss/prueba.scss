@@ -5,6 +5,7 @@
   /*encabezado*/
   .encabezado{
       background-color: orangered;
+      height: 220px;
   }
   @mixin MixinEncabezado {
     border-top: 20px;
@@ -13,7 +14,7 @@
   h1 {
       @include MixinEncabezado;
     font-size: 50px;
-    height: 80px;
+    height: 100px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
     margin-bottom: 0px; }
@@ -21,13 +22,15 @@
   /*encabezado*/
   .logo {
     position: relative;
-    left: 470px; }
+    right: 50%;
+  }
   
   /*nav generico*/
   nav{
 
-    height: 100px;
+    height: auto;
     width: 100%;
+    padding-bottom: 10px;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -37,7 +40,8 @@
   .rutas {
       display: inline-block;
     font-size: 20px;
-    padding: 30px; }
+    padding: 30px;
+  }
   
   /*nav generico*/
   /*main de todas las paginas*/
@@ -53,7 +57,7 @@
   
   .largoproductos {
       @extend main;
-    height: 2000px;
+    height: 2600px;
     width: 100%;
  }
   
@@ -68,8 +72,9 @@
 
   .largoquienessomos{
       @extend main;
-        height: 800px;
+        height: auto;
         width: 100%;
+        padding-bottom: 10px
 
     }
     
@@ -77,14 +82,14 @@
        @extend main;
         font-size: 30px;
         padding-top: 35px;
-        height: 500px;
+        height: auto;
     }
   
   /*main de todas las paginas*/
   /*footer generico*/
   footer {
     top: 20px;
-    height: 140px;
+    height: auto;
     background-color: black;
     text-align: center; 
 }
@@ -101,4 +106,45 @@
     }
   
   /*footer generico*/
+
+  @media only screen and (min-widht:468px) and (max-widht:600px){
+    nav{
+      position: relative;
+      height: auto;
+    }
+    #rutas1{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+
+    .padre{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-widh:600px) and (max-widht:1200px){
+
+  nav ul li{
+    display: block;
+
+  }
+    .rutas{
+        display: inline;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .padre{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+}
   
